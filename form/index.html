@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>formulaire d'inscription</title>
+</head>
+<body>
+    <h1>formulaire d'inscription</h1>
+    <div class="form">
+        <div>votre nom de famille
+            <input type="text" id="user-name" name="name" placeholder="ducon" required>
+        </div>
+        <div>votre prénom
+            <input type="text" id="user_first_name"name="first_name" placeholder="brandon" required>
+        </div>
+        <div>votre e-mail
+            <input type="email" name="mail" id="user_email" placeholder="brandon.ducon@mail.fr" required>
+        </div>
+        <div>votre date de naissance
+            <input type="date" name="birthdate" id="user_birthdate" required>
+        </div>
+        <div>
+            <label for="subs_select">type d'abonnement choisi</label>
+            <select>
+                <option value="annual">annuel</option>
+                <option value="PPV">pay-per-view</option>
+                <option value="monthly">mensuel</option>
+            </select>
+        </div>
+        <hr>
+        <div class="check">
+            <div>en cliquant ici, vous acceptez les conditions de vente. 
+                <input type="checkbox" name="CGU" id="CGU" required>
+            </div>
+            <div>en cliquant ici, vous acceptez de vous inscrire à la newsletter
+                <input type="checkbox" name="newsletter" id="newsletter">
+            </div>
+        </div>
+        <div>
+            <button>
+                <a href="">valider mon inscription</a>
+            </button>
+            
+        </div>
+    </div>
+</body>
+</html>
